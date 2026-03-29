@@ -4,7 +4,7 @@
 
 ![Portfolio Preview](./public/preview.png)
 
-# 🚀 Krishna Sharma – Portfolio
+# 🚀 Krishna Sharma - Portfolio
 
 [![Live](https://img.shields.io/badge/Live-Portfolio-orange?style=for-the-badge&logo=vercel)](https://portfolio-pi-eight-epcw8688vr.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/krishnash648/portfolio)
