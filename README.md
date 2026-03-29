@@ -105,3 +105,10 @@ This portfolio is continuously improving as I learn and build more real-world pr
 - ✅ Recruiter-friendly  
 
 ---
+## 👨‍💻 Author
+
+**Krishna Sharma**
+
+- GitHub: https://github.com/krishnash648  
+- LinkedIn: (https://www.linkedin.com/in/krishna-sharma-539184215/)
+----
