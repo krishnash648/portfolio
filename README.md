@@ -65,15 +65,20 @@ I focus on writing clean, maintainable code and delivering smooth user experienc
 
 ---
 
-## ⚙️ Run Locally
+## ## ⚙️ Run Locally
 
-git clone https://github.com/krishnash648/portfolio.git 
+```bash
+git clone https://github.com/krishnash648/portfolio.git
 cd portfolio
 npm install
 npm run dev
+```
 
-🌐 Deployment 
-Deployed using Vercel
+---
+
+## 🌐 Deployment
+
+Deployed using **Vercel**
 
 ---
 
