@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: #1a120b;
+  --color-surface: #241910;
+  --color-surface-2: #2d2118;
+  --color-ink: #faf7f2;
+  --color-ink-muted: #b9a896;
+  --color-line: rgba(255, 224, 184, 0.08);
+  --color-line-strong: rgba(255, 210, 150, 0.16);
+  --color-accent: #f59e0b;
+  --color-accent-soft: rgba(245, 158, 11, 0.14);
+
+  --shadow-glow: 0 0 100px rgba(245, 158, 11, 0.09);
+
+  --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 1s ease both;
+  --animate-float: float 14s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(1.5%, -1.5%) scale(1.02);
+  }
+  66% {
+    transform: translate(-1.5%, 1%) scale(0.99);
+  }
+}
+
+@keyframes hero-slide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-shell {
+  @apply py-20 sm:py-28 lg:py-36;
+}
+
+.page-gutter {
+  @apply mx-auto w-full max-w-6xl px-4 min-[480px]:px-5 sm:px-8;
+}
+
+.section-eyebrow {
+  @apply text-[11px] font-bold uppercase tracking-[0.18em] text-accent min-[400px]:tracking-[0.24em] sm:text-xs sm:tracking-[0.28em];
+}
+
+.section-title {
+  @apply mt-4 max-w-4xl font-display text-[clamp(1.875rem,calc(0.35rem+5vw),3.5rem)] font-extrabold tracking-[-0.03em] text-ink sm:mt-5 sm:tracking-[-0.035em] md:text-[3.25rem] md:leading-[1.06] lg:text-[3.5rem];
+}
+
+.body-lead {
+  @apply text-base leading-relaxed text-ink-muted sm:text-lg sm:leading-[1.75];
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(4.75rem + env(safe-area-inset-top, 0px));
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 6.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: clip;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
