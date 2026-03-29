@@ -67,12 +67,12 @@ I focus on writing clean, maintainable code and delivering smooth user experienc
 
 ## ⚙️ Run Locally
 
-git clone https://github.com/krishnash648/portfolio.git
+git clone https://github.com/krishnash648/portfolio.git 
 cd portfolio
 npm install
 npm run dev
 
-🌐 Deployment
+🌐 Deployment 
 Deployed using Vercel
 
 ---
