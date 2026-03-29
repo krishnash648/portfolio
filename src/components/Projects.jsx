@@ -50,8 +50,8 @@ const projects = [
       "Streamlined issue resolution workflow into an intuitive, high-performance UI",
     ],
     size: "medium",
-    live: "https://krishnash648.github.io/todo-app-celebal/",
-    github: "https://service-desk-app-vegu.vercel.app/login",
+    live: "https://service-desk-app-vegu.vercel.app/login",
+    github: "https://github.com/krishnash648/service-desk-app",
   },
 ];
 
