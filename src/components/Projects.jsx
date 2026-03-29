@@ -51,7 +51,7 @@ const projects = [
     ],
     size: "medium",
     live: "https://krishnash648.github.io/todo-app-celebal/",
-    github: "https://github.com/krishnash648/todo-app-celebal",
+    github: "https://service-desk-app-vegu.vercel.app/login",
   },
 ];
 
